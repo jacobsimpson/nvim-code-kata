@@ -1,0 +1,24 @@
+*nvim-code-kata* Quickly execute coding practices.
+
+                                Code Kata
+
+==============================================================================
+
+CONTENTS                                 *nvim-code-kata-contents*
+
+    1. Introduction .................... |nvim-code-kata-intro|
+
+
+Original Author:    Jacob Simpson
+License:            BSD
+
+INTRODUCTION                                *nvim-code-kata-intro*
+
+Keeps a list of code kata type problems and randomly selects one, taking into
+account the weight assigned to the problem.
+
+The problem list is kept in ~/.code-kata-problems.json
+
+A directory will be created, a basic template file will be populated and vim
+will be moved to that directory.
+
