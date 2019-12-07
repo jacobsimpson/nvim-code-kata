@@ -3,12 +3,16 @@
 A plugin to make it easy to write little one off practice programs. It randomly
 selects one from a configuration list.
 
+NOTE: At the moment, if you are not me and you attempt to use this, you will
+encounter frustration. There are a couple of hard coded paths in there.
+
 ## Install
 
-Add this line to your NeoBundle configuration:
+Add this line to your [vim-plug](https://github.com/junegunn/vim-plug)
+configuration:
 
 ```VimL
-NeoBundle 'jacobsimpson/nvim-code-kata'
+Plug 'jacobsimpson/nvim-code-kata'
 ```
 
 ## To Use
@@ -17,7 +21,7 @@ NeoBundle 'jacobsimpson/nvim-code-kata'
 :BeginKata
 ```
 
-Begins a code kata, randomly selecting one from the ~/.code-kata-problems.json
+Begins a code kata, randomly selecting one from the ~/.code-kata-problems
 configuration file.
 
 ```VimL
@@ -25,4 +29,11 @@ configuration file.
 ```
 
 Ends the code kata. It will look try to populate an end time and the duration
-in the right place in the comments at the top of the file.
+in the right place in the `stats.txt` file in the kata directory.
+
+## Development
+
+```
+nvim --cmd "set rtp+=./nvim-code-kata"
+```
+
